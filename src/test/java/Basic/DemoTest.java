@@ -13,6 +13,22 @@ public void FacebookTest()
 	String actualtitle = driver.getTitle();
 	System.out.println(actualtitle);
 }
+@Test(groups="Food")
+public void swiggy()
+{
+	WebDriver  driver = new ChromeDriver();
+	driver.get("https://www.swiggy.com/");
+	String actualtitle = driver.getTitle();
+	System.out.println(actualtitle);
+}
+@Test (groups="Food")
+public void zomato()
+{
+	WebDriver  driver = new ChromeDriver();
+	driver.get("https://www.zomato.com/");
+	String actualtitle = driver.getTitle();
+	System.out.println(actualtitle);
+}
 
 	
 }
